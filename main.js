@@ -21,5 +21,7 @@ function cleanup(text) {
 
   const removedUseless = textBasic.replaceAll('UU看书 www.uukanshu.com', '')
   const removedUseless1 = removedUseless.replaceAll('UU看書 www.uukanshu.com', '')
-  return removedUseless1
+  const addSpace = removedUseless1.replaceAll(',', ', ')
+  const addSpace1 = addSpace.replaceAll(':', ': ')
+  return addSpace1
 }
