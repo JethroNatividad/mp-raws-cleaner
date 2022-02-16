@@ -20,5 +20,6 @@ function cleanup(text) {
   )
 
   const removedUseless = textBasic.replaceAll('UU看书 www.uukanshu.com', '')
-  return removedUseless
+  const removedUseless1 = removedUseless.replaceAll('UU看書 www.uukanshu.com', '')
+  return removedUseless1
 }
