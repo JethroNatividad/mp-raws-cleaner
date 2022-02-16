@@ -1,5 +1,15 @@
 import './style.css'
+import ClipboardJS from 'clipboard'
+const textarea = document.querySelector('textarea')
 
+new ClipboardJS('.btn');
+
+// textarea on change run cleanup
+textarea.addEventListener('change', () => {
+  const output = cleanup(textarea.value)
+  textarea.value = output
+
+})
 
 
 function cleanup(text) {
